@@ -1,0 +1,108 @@
+﻿/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* --- Ustalık Dokunuşu: Pürüzsüz Kaydırma --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa; /* Çok hafif bir gri tonu, bejden daha modern durabilir */
+    color: #333;
+}
+
+/* --- Navigasyon Menüsü --- */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* --- Ustalık Dokunuşu: Menü Linklerine Hover Efekti --- */
+.navbar .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #198754 !important; /* Bootstrap'in yeşil rengi */
+    transform: translateY(-2px);
+}
+
+
+/* --- Ana Karşılama Bölümü --- */
+.hero-section {
+    background-color: #f5f5dc; /* Senin istediğin bej rengi */
+    padding-top: 80px; /* Menü altta kalmasın diye */
+}
+
+/* --- Ustalık Dokunuşu: Ana Resme Daha Yumuşak Gölge --- */
+.hero-section img {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.hero-buttons .btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* --- Genel Bölüm Başlıkları --- */
+.section-title {
+    font-weight: 700;
+    color: #2e4638; /* Senin istediğin koyu yeşil */
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #198754;
+}
+
+/* --- Hizmet Kartları --- */
+.service-card {
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+/* --- Ustalık Dokunuşu: Hizmet Kartlarına Hover Efekti --- */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+
+/* --- Galeri Bölümü --- */
+#galeri img {
+    transition: transform 0.3s ease;
+}
+
+#galeri img:hover {
+    transform: scale(1.05);
+}
+
+/* --- İletişim Bölümü --- */
+#iletisim h3 a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #212529;
+}
